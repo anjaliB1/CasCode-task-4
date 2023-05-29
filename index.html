@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anjali Baudh">
+    <meta name="description" content="BMI Calculator using HTML, CSS and JavaScript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <!--Heading-->
+    <div class="heading">
+        <h1>BMI Calculator</h1>
+    </div>
+
+    <!--Form-->
+    <form id="form" action="/">
+        <!--Gender-->
+        <div class="form-group">
+            <label for="gender-label"><b>Gender</b></label>
+            <label for="gender1">
+                <input type="radio" class="gender" id="male"><b>Male</b></input>
+            </label>
+            <label for="gender2">
+                <input type="radio" class="gender" id="female"><b>Female</b></input>
+            </label>
+            <p class="gen" id="gen"></p>
+        </div>
+
+        <!--Age-->
+        <div class="form-group">
+            <label for="age-label"><b>Age</b></label>
+            <input type="text" id="age" class="age" placeholder="Enter your age">
+            <p class="error"></p>
+        </div>
+
+        <!--Height-->
+        <div class="form-group">
+            <label for="height-label"><b>Height</b></label>
+            <select name="unit" id="dropdown" class="height-unit">
+                <option value="centimeters">centimeters</option>
+                <option value="feet">feet</option>
+            </select>
+            <input type="text" id="height" class="height" placeholder="Enter your height">
+            <p class="error"></p>
+        </div>
+
+        <!--Weight-->
+        <div class="form-group">
+            <label for="weight-label"><b>Weight</b></label>
+            <select name="unit" id="dropdown1" class="weight-unit">
+                <option value="kilograms">kilograms</option>
+                <option value="pounds">pounds</option>
+            </select>&nbsp;&nbsp;
+            <input type="text" id="weight" class="weight" placeholder="Enter your weight">
+            <p class="error"></p>
+        </div>
+
+        <!--Calculate-->
+        <button type="submit" id="submit" class="submit"><b>Calculate</b></button>
+        <!--Reset-->
+        <button type="reset" id="resetButton" class="resetButton"><b>Reset</b></button>
+        
+    </form>
+
+    <div class="result">
+        <p class="result-text" id="result-text"></p>
+    </div>
+    
+    <div class="copy">
+        Copyright <b>&copy;</b> <b>Anjali Baudh</b>
+    </div>
+</body>
+</html>
